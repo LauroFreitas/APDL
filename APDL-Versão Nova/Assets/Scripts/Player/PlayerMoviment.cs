@@ -45,6 +45,7 @@ public class PlayerMoviment : MonoBehaviour
          
             if (controller.isGrounded == true && controller.velocity.magnitude > 2f && source.isPlaying == false)
             {
+                Debug.Log("TESTE");
                 source.volume = Random.Range(0.6f, 1f);
                 source.pitch = Random.Range(1.4f, 2.3f);
                 source.panStereo = Random.Range(-0.5f, 0.5f);
@@ -59,6 +60,7 @@ public class PlayerMoviment : MonoBehaviour
                 source.volume = Random.Range(0.4f, 0.6f);
                 source.pitch = Random.Range(1, 1.3f);
                 PlaySoundMove("Andar");
+                Debug.Log("TESTE");
             }
             NormalSpeed = 12;
             isRunning = false;
