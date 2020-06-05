@@ -34,12 +34,12 @@ public class ColiderEventSaida : MonoBehaviour
     IEnumerator PlayerPassagem() 
     {
         MetaEventSet.singleton.metaEvents[1].Event.Invoke();
-        GameObject.Find("Player").GetComponent<PlayerMoviment>().enabled = false;
+        GameObject.Find("Player_").GetComponent<PlayerMoviment>().enabled = false;
         GameObject.Find("Panel2").GetComponent<Fade>().FadeStart();
 
         yield return new WaitForSeconds(3);
         Player.singleton.playerPrefab.transform.Rotate(0, 180, 0);
-        GameObject.Find("Player").GetComponent<PlayerMoviment>().enabled = true;
+        GameObject.Find("Player_").GetComponent<PlayerMoviment>().enabled = true;
         this.gameObject.SetActive(false);
         myMultiDelegate -= StartCo;
     }

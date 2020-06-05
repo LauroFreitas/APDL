@@ -11,9 +11,9 @@ public class PortaManager : MonoBehaviour
     ClassePorta portaFinal1 = new ClassePorta(TypeDoor.chaveadas, false, "A");
     ClassePorta portaFinal2 = new ClassePorta(TypeDoor.nChaveada, false, "B");
     ClassePorta portaQPlayer = new ClassePorta(TypeDoor.nChaveada, true, "C");
-    ClassePorta portaQPais = new ClassePorta(TypeDoor.nChaveada, false, "D");
+    ClassePorta portaQPais = new ClassePorta(TypeDoor.nChaveada, true, "D");
     ClassePorta portaSala = new ClassePorta(TypeDoor.nChaveada, true, "E");
-    ClassePorta portaBanheiro = new ClassePorta(TypeDoor.nChaveada, false, "F");
+    ClassePorta portaBanheiro = new ClassePorta(TypeDoor.nChaveada, true, "F");
 
     public GameObject portaPai;
     private GameObject pBFinal1;

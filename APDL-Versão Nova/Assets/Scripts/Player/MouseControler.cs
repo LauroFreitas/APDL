@@ -7,8 +7,6 @@ public class MouseControler : MonoBehaviour
     private float sensibilidade = 80f;
     public Transform playerBody;
     float xRotation = 0f;
-
-
     public void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -22,7 +20,7 @@ public class MouseControler : MonoBehaviour
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);//Trava nos 90 graus
-
+       
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         playerBody.Rotate(Vector3.up * mouseX);//Muda o sentido em que o player está andando 

@@ -9,7 +9,7 @@ public class ColideEventCorredor : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-          
+
         }
     }
     private void OnTriggerExit(Collider other)
