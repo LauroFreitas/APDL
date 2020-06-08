@@ -12,8 +12,8 @@ public class ColiderEventSala : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            myMultiDelegate += StartCo;
-            myMultiDelegate.Invoke(1);
+           // myMultiDelegate += StartCo;
+           // myMultiDelegate.Invoke(1);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -28,7 +28,7 @@ public class ColiderEventSala : MonoBehaviour
     {
         if (ID == 1)
         {
-            StartCoroutine(PlayerPassagem());
+           // StartCoroutine(PlayerPassagem());
         }
         else if (ID == 2)
         {
@@ -36,6 +36,7 @@ public class ColiderEventSala : MonoBehaviour
         }
 
     }
+    /*
     IEnumerator PlayerPassagem()
     {
         MetaEventSet.singleton.metaEvents[5].Event.Invoke();
@@ -46,4 +47,5 @@ public class ColiderEventSala : MonoBehaviour
         yield return new WaitForSeconds(6);
         myMultiDelegate -= StartCo;
     }
+    */
 }

@@ -9,7 +9,7 @@ public class PortaManager : MonoBehaviour
     ClassePorta[] portas = new ClassePorta[6];
     
     ClassePorta portaFinal1 = new ClassePorta(TypeDoor.chaveadas, false, "A");
-    ClassePorta portaFinal2 = new ClassePorta(TypeDoor.nChaveada, false, "B");
+    ClassePorta portaFinal2 = new ClassePorta(TypeDoor.nChaveada, true, "B");
     ClassePorta portaQPlayer = new ClassePorta(TypeDoor.nChaveada, true, "C");
     ClassePorta portaQPais = new ClassePorta(TypeDoor.nChaveada, true, "D");
     ClassePorta portaSala = new ClassePorta(TypeDoor.nChaveada, true, "E");

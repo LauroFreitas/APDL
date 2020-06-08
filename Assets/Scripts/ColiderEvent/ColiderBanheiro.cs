@@ -13,15 +13,15 @@ public class ColiderBanheiro : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            myMultiDelegate += StartCo;
-            myMultiDelegate.Invoke(1);
+           // myMultiDelegate += StartCo;
+            //myMultiDelegate.Invoke(1);
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            luz.SetActive(false);
+           // luz.SetActive(false);
         }
     }
 
@@ -29,7 +29,7 @@ public class ColiderBanheiro : MonoBehaviour
     {
         if (ID == 1) 
         {
-            StartCoroutine(PlayerPassagem());
+         //   StartCoroutine(PlayerPassagem());
         }
         else if (ID == 2) 
         {
@@ -37,13 +37,17 @@ public class ColiderBanheiro : MonoBehaviour
         }
         
     }
-    IEnumerator PlayerPassagem()
-    {
-        MetaEventSet.singleton.metaEvents[2].Event.Invoke();
-        yield return new WaitForSeconds(8);
-        luz.SetActive(false);
-        this.gameObject.SetActive(false);
-        MetaEventSet.singleton.metaEvents[3].Event.Invoke();
-        myMultiDelegate -= StartCo;
+    /*
+   IEnumerator PlayerPassagem()
+   {
+
+       MetaEventSet.singleton.metaEvents[2].Event.Invoke();
+       yield return new WaitForSeconds(8);
+       luz.SetActive(false);
+       this.gameObject.SetActive(false);
+       MetaEventSet.singleton.metaEvents[3].Event.Invoke();
+       myMultiDelegate -= StartCo;
+      
     }
+ */
 }

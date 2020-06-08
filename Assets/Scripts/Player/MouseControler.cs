@@ -19,7 +19,7 @@ public class MouseControler : MonoBehaviour
 
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);//Trava nos 90 graus
+        xRotation = Mathf.Clamp(xRotation, -60f, 60f);//Trava nos 90 graus
        
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
